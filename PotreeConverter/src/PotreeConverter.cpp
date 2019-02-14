@@ -1,6 +1,6 @@
 
 
-#include <experimental/filesystem>
+#include <boost/filesystem.hpp>
 
 #include "rapidjson/document.h"
 #include "rapidjson/prettywriter.h"
@@ -45,7 +45,7 @@ using std::chrono::milliseconds;
 using std::chrono::duration_cast;
 using std::fstream;
 
-namespace fs = std::experimental::filesystem;
+namespace fs = boost::filesystem;
 
 namespace Potree{
 
